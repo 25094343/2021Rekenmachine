@@ -37,15 +37,14 @@ public class JavaFXApp extends Application {
         return 0;
     }
 
-    protected int computeDivide (int number1, int number2) {
-        return 0;
-    }
+    protected int computeDivide (int number1, int number2) {return number1/number2;}
+
 
     private void compute (String operator) {
 
         int result;
-        int number1 = getNumberFromTextField (txtNumber1);
-        int number2 = getNumberFromTextField (txtNumber2);
+        int number1 = addTextField (txtNumber1);
+        int number2 = addTextField (txtNumber2);
 
         switch (operator) {
             case PLUS:
